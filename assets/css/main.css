@@ -76,6 +76,7 @@ body {
   border-radius: 50%;
   overflow: hidden;
   transition: all ease-in-out 0.5s;
+  z-index: 111;
 }
 .checkbox-input:checked + .toggle-switch {
   left: 124px;
@@ -86,6 +87,8 @@ body {
 }
 .toggle-switch-container:has(.checkbox-input:checked) {
   background-color: var(--dark-background-color);
+  box-shadow: inset 0px 3px 4px #010039, inset 2px -3px 4px rgba(0, 0, 0, 0.75),
+    inset -2px 3px 4px rgba(0, 0, 0, 0.75);
 }
 .moon-dot-1,
 .moon-dot-2,
@@ -118,4 +121,46 @@ body {
 .checkbox-input:checked + .toggle-switch > label > .moon-dot-2,
 .checkbox-input:checked + .toggle-switch > label > .moon-dot-3 {
   opacity: 1;
+}
+.clouds-container {
+  transform: translateY(0);
+  transition: all ease-in-out 0.5s;
+}
+.cloud {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.25);
+}
+.cloud-1 {
+  left: 26px;
+  top: 48.21px;
+}
+.cloud-2 {
+  left: 54px;
+  top: 45px;
+  z-index: 80;
+}
+.cloud-3 {
+  left: 80.8px;
+  top: 40px;
+  z-index: 75;
+}
+.cloud-4 {
+  left: 122.8px;
+  top: 34px;
+  z-index: 99;
+}
+.cloud-5 {
+  left: 103.8px;
+  top: 27px;
+}
+.cloud-6 {
+  left: 138.2px;
+  top: 17px;
+  z-index: 80;
+}
+.checkbox-input:checked ~ .clouds-container {
+  transform: translateY(900px);
 }

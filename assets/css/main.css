@@ -87,3 +87,35 @@ body {
 .toggle-switch-container:has(.checkbox-input:checked) {
   background-color: var(--dark-background-color);
 }
+.moon-dot-1,
+.moon-dot-2,
+.moon-dot-3 {
+  background: var(--moon-spots-color);
+  box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.36);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+.moon-dot-1 {
+  width: 13px;
+  height: 13px;
+  left: 14px;
+  top: 20px;
+}
+.moon-dot-2 {
+  width: 10px;
+  height: 10px;
+  left: 25px;
+  top: 10px;
+}
+.moon-dot-3 {
+  width: 5px;
+  height: 5px;
+  left: 27px;
+  top: 35px;
+}
+.checkbox-input:checked + .toggle-switch > label > .moon-dot-1,
+.checkbox-input:checked + .toggle-switch > label > .moon-dot-2,
+.checkbox-input:checked + .toggle-switch > label > .moon-dot-3 {
+  opacity: 1;
+}

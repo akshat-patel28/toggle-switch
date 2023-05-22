@@ -32,3 +32,13 @@ body {
 .position-absolute {
   position: absolute;
 }
+.app_colors {
+  --app-background-color: #c2c2c2;
+  --sun-color: #ffb800;
+  --moon-color: #b1b1b1;
+  --moon-spots-color: #868686;
+  --white-color: #fff;
+  --dark-background-color: #000;
+  --light-background-color: #4b7eff;
+  --black-color: #000;
+}

@@ -58,6 +58,7 @@ body {
   box-shadow: 1px -3px 4px rgba(0, 0, 0, 0.25), -1px 4px 4px rgba(0, 0, 0, 0.25),
     inset 2px -2px 4px rgba(0, 0, 0, 0.75),
     inset -2px 3px 4px rgba(0, 0, 0, 0.75);
+  transition: all ease-in-out 0.5s;
 }
 .checkbox-input {
   top: 0;
@@ -75,4 +76,14 @@ body {
   border-radius: 50%;
   overflow: hidden;
   transition: all ease-in-out 0.5s;
+}
+.checkbox-input:checked + .toggle-switch {
+  left: 124px;
+  transform: rotate(360deg);
+  background-color: var(--moon-color);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+    inset -1px -2px 3px rgba(0, 0, 0, 0.48), inset 2px 2px 4px #ffffff;
+}
+.toggle-switch-container:has(.checkbox-input:checked) {
+  background-color: var(--dark-background-color);
 }

@@ -7,5 +7,33 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Day & Night Toggle</title>
   </head>
-  <body class="app_colors"></body>
+  <body class="app_colors">
+    <main
+      class="d-flex justify-content-center align-items-center w-100 h-100 container">
+      <div class="toggle-switch-container position-relative">
+        <input
+          type="checkbox"
+          name="toggle"
+          id="toggle"
+          class="position-absolute checkbox-input" />
+        <div class="position-absolute toggle-switch cursor-pointer">
+          <label
+            for="toggle"
+            class="w-100 h-100 d-block cursor-pointer position-relative">
+            <span class="moon-dot-1 position-absolute"></span>
+            <span class="moon-dot-2 position-absolute"></span
+            ><span class="moon-dot-3 position-absolute"></span
+          ></label>
+        </div>
+        <div class="clouds-container">
+          <div class="cloud cloud-1 position-absolute"></div>
+          <div class="cloud cloud-2 position-absolute"></div>
+          <div class="cloud cloud-3 position-absolute"></div>
+          <div class="cloud cloud-4 position-absolute"></div>
+          <div class="cloud cloud-5 position-absolute"></div>
+          <div class="cloud cloud-6 position-absolute"></div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

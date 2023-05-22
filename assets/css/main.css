@@ -11,6 +11,9 @@ body {
 .d-flex {
   display: flex;
 }
+.d-block {
+  display: block;
+}
 .justify-content-center {
   justify-content: center;
 }
@@ -43,5 +46,33 @@ body {
   --black-color: #000;
 }
 .container {
+  min-height: 100vh;
   background-color: var(--app-background-color);
+}
+.toggle-switch-container {
+  width: 180px;
+  height: 60px;
+  overflow: hidden;
+  background-color: var(--light-background-color);
+  border-radius: 40px;
+  box-shadow: 1px -3px 4px rgba(0, 0, 0, 0.25), -1px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 2px -2px 4px rgba(0, 0, 0, 0.75),
+    inset -2px 3px 4px rgba(0, 0, 0, 0.75);
+}
+.checkbox-input {
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.toggle-switch {
+  width: 50px;
+  height: 50px;
+  left: 7px;
+  top: 5px;
+  background: #ffb800;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+    inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all ease-in-out 0.5s;
 }

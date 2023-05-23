@@ -218,11 +218,9 @@ body {
   left: 80px;
   top: -30px;
   background: rgba(255, 255, 255, 0.09);
-  /* transform: rotate(179.56deg); */
 }
 .checkbox-input:checked ~ .shadow-ring-4 {
   left: 57px;
   top: -40px;
   background: rgba(255, 255, 255, 0.05);
-  /* transform: rotate(179.56deg); */
 }

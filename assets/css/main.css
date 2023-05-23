@@ -169,6 +169,7 @@ body {
 .shadow-ring-3,
 .shadow-ring-4 {
   border-radius: 50%;
+  transition: all ease-in-out 0.5s;
 }
 .shadow-ring-1 {
   width: 80px;
@@ -201,4 +202,27 @@ body {
   top: -40px;
   background: rgba(255, 255, 255, 0.05);
   z-index: 64;
+}
+
+.checkbox-input:checked ~ .shadow-ring-1 {
+  left: 110px;
+  top: -10px;
+  opacity: 0;
+}
+.checkbox-input:checked ~ .shadow-ring-2 {
+  left: 104px;
+  top: -20px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.checkbox-input:checked ~ .shadow-ring-3 {
+  left: 80px;
+  top: -30px;
+  background: rgba(255, 255, 255, 0.09);
+  /* transform: rotate(179.56deg); */
+}
+.checkbox-input:checked ~ .shadow-ring-4 {
+  left: 57px;
+  top: -40px;
+  background: rgba(255, 255, 255, 0.05);
+  /* transform: rotate(179.56deg); */
 }

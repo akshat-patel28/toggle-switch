@@ -164,3 +164,126 @@ body {
 .checkbox-input:checked ~ .clouds-container {
   transform: translateY(900px);
 }
+.shadow-ring-1,
+.shadow-ring-2,
+.shadow-ring-3,
+.shadow-ring-4 {
+  border-radius: 50%;
+  transition: all ease-in-out 0.5s;
+}
+.shadow-ring-1 {
+  width: 80px;
+  height: 80px;
+  left: -11px;
+  top: -10px;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 70;
+}
+.shadow-ring-2 {
+  width: 100px;
+  height: 100px;
+  left: -10px;
+  top: -18px;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 68;
+}
+.shadow-ring-3 {
+  width: 120px;
+  height: 120px;
+  left: -6px;
+  top: -30px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 66;
+}
+.shadow-ring-4 {
+  width: 140px;
+  height: 140px;
+  left: 0px;
+  top: -40px;
+  background: rgba(255, 255, 255, 0.05);
+  z-index: 64;
+}
+
+.checkbox-input:checked ~ .shadow-ring-1 {
+  left: 110px;
+  top: -10px;
+  opacity: 0;
+}
+.checkbox-input:checked ~ .shadow-ring-2 {
+  left: 104px;
+  top: -20px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.checkbox-input:checked ~ .shadow-ring-3 {
+  left: 80px;
+  top: -30px;
+  background: rgba(255, 255, 255, 0.09);
+}
+.checkbox-input:checked ~ .shadow-ring-4 {
+  left: 57px;
+  top: -40px;
+  background: rgba(255, 255, 255, 0.05);
+}
+.stars-container {
+  transform: translateY(-50px);
+  transition: all ease-in-out 0.5s;
+}
+.checkbox-input:checked ~ .stars-container {
+  transform: translateY(0px);
+}
+.stars-container > svg {
+  color: var(--white-color) !important;
+}
+.star-1 {
+  top: 10px;
+  left: 23px;
+}
+.star-2 {
+  width: 1.2rem;
+  height: 1.2rem;
+  top: 25px;
+  left: 38px;
+}
+.star-3 {
+  left: 51px;
+  top: 5px;
+}
+.star-4,
+.star-5 {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.star-4 {
+  top: 36px;
+  left: 63px;
+}
+.star-5 {
+  top: 32px;
+  left: 15px;
+}
+/* footer styles */
+.footer {
+  flex-direction: column;
+  min-height: 80px;
+  padding: 10px 0;
+  gap: 5px;
+  background-color: #6865ff;
+}
+.footer-title-text,
+.footer-text {
+  margin: 0;
+  color: var(--white-color);
+}
+.footer-logos {
+  gap: 5px;
+  margin-top: 10px;
+}
+.footer-logo-container {
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.footer-link {
+  color: #010039 !important;
+}

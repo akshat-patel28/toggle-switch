@@ -261,3 +261,29 @@ body {
   top: 32px;
   left: 15px;
 }
+/* footer styles */
+.footer {
+  flex-direction: column;
+  min-height: 80px;
+  padding: 10px 0;
+  gap: 5px;
+  background-color: #6865ff;
+}
+.footer-title-text,
+.footer-text {
+  margin: 0;
+  color: var(--white-color);
+}
+.footer-logos {
+  gap: 5px;
+  margin-top: 10px;
+}
+.footer-logo-container {
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.footer-link {
+  color: #010039 !important;
+}

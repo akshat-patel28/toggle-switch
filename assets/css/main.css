@@ -224,3 +224,40 @@ body {
   top: -40px;
   background: rgba(255, 255, 255, 0.05);
 }
+.stars-container {
+  transform: translateY(-50px);
+  transition: all ease-in-out 0.5s;
+}
+.checkbox-input:checked ~ .stars-container {
+  transform: translateY(0px);
+}
+.stars-container > svg {
+  color: var(--white-color) !important;
+}
+.star-1 {
+  top: 10px;
+  left: 23px;
+}
+.star-2 {
+  width: 1.2rem;
+  height: 1.2rem;
+  top: 25px;
+  left: 38px;
+}
+.star-3 {
+  left: 51px;
+  top: 5px;
+}
+.star-4,
+.star-5 {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.star-4 {
+  top: 36px;
+  left: 63px;
+}
+.star-5 {
+  top: 32px;
+  left: 15px;
+}

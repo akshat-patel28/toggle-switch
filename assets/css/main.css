@@ -222,7 +222,7 @@ body {
 .checkbox-input:checked ~ .shadow-ring-4 {
   left: 57px;
   top: -40px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.09);
 }
 .stars-container {
   transform: translateY(-50px);

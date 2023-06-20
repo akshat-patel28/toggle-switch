@@ -12,7 +12,7 @@ Before you begin, ensure you have met the following requirements:
 
 This project is free to use and does not contains any license.
 
-# Installing Vectorverse
+# Installing Toggle Switch
 
 To install Toggle Switch, follow these steps:
 
